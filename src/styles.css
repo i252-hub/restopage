@@ -20,10 +20,22 @@ body, html{
     padding: 0;
 }
 
-header{
+header, footer{
     width: 100vw;
     height: 10vh;
     background: rgb(158, 91, 9);
+    color: white
+}
+
+footer{
+    position: relative;
+    top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    gap: 14px;
+    align-items: center;
 }
 
 nav{
@@ -47,18 +59,24 @@ button{
 /*Parent Container*/
 #content{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 
 .container{
     width:65vw;
-    height: 90%;
+    height: auto;
     background: rgb(158, 91, 9);
     position: relative;
     top: 2em;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
     
 }
 
@@ -119,17 +137,23 @@ font-family: "Cedarville Cursive", cursive;
 }
 
 .contact{
-    width: 350px;
-    height: 250px;
-    border: burlywood solid 2px;
+    width: 450px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    left: 20%;
 }
 
 .map{
-    width: 250px;
-    height: 150px;
+   width: 50%;
+   height: auto;
+   display: block;
+}
+
+.info{
+    color: white;
 }
 
 

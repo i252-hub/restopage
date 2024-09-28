@@ -1,4 +1,5 @@
 import { createCafeContainer } from './containers.js';
+import coffeeImage from './coffee.png'
 
 export default function homePage(){
    
@@ -10,8 +11,9 @@ title.classList.add('title');
 container.appendChild(title);
 
 const coffee = document.createElement('img');
-coffee.src = 'coffee.png';
+coffee.src = coffeeImage;
 coffee.alt = 'coffee';
+coffee.classList.add('brew');
 const headingone = document.createElement('h1');
 headingone.textContent = 'BREWING CAFE';
 const text = document.createElement('p');
